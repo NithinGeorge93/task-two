@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html > 
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery VanderTable Plugin Demo</title>
+		<link rel="shortcut icon" type="image/ico" href="./public/images/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+		<link rel="stylesheet" href="public/css/bootstrap.css">
+		<link rel="stylesheet" href="public/css/style.css">
+		<link rel="stylesheet" href="public/css/vandertable.css">
+		<link rel="stylesheet" href="public/css/fontello/css/fontello.css">
+	</head>
+	<body>
+		<div class="fixed">
+			<div class="header-box pd-15 container-fluid amp-row width-100">
+				<div class="row amp-row width-100">
+					<div class="col-sm-3">
+						<div class="row amp-row">
+							<div class="col-sm-2">
+								<div class="nav-toggle">
+									<div class="nav-toggle-bar"></div>
+								</div>
+							</div>
+							<div class="col-sm-10">
+								<div class="d-table">
+									<div class="d-table-cell">
+										<p class="mg-0">ux.analytics</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="d-table">
+									<div class="d-table-cell">
+										<div class="media">
+											<div class="media-left media-middle">
+												<i class="icon-mobile"></i>
+											</div>
+											<div class="media-body media-middle">
+												<div class="center">
+													<select name="sources" id="sources1" class="custom-select sources" placeholder="mobile">
+														<option value="profile">mobile 1</option>
+														<option value="word">mobile 2</option>
+														<option value="hashtag">mobile 3</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="d-table">
+									<div class="d-table-cell">
+										<div class="media">
+											<div class="media-left media-middle">
+												<i class="icon-calendar-inv"></i>
+											</div>
+											<div class="media-body media-middle">
+												<div class="center">
+													<select name="sources" id="sources1" class="custom-select sources" placeholder="04/12 - 24/12">
+														<option value="profile">07/12 - 22/12</option>
+														<option value="word">06/12 - 21/12</option>
+														<option value="hashtag">10/12 - 20/12</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="d-table">
+									<div class="d-table-cell">
+										<div class="media">
+											<div class="media-left media-middle">
+												<i class="icon-adult"></i>
+											</div>
+											<div class="media-body media-middle">
+												<div class="center">
+													<select name="sources" id="sources1" class="custom-select sources" placeholder="Iphone7 - IOS 10">
+														<option value="profile">Iphone7 - IOS 10</option>
+														<option value="word">Iphone10 - IOS 10</option>
+														<option value="hashtag">android</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<ul class="mg-0 right pd-15 list">
+							<li class=" icon-bell-1"></li>
+							<li class="icon-cog"></li>
+							<li class="user"></li>
+							<li>
+								<select name="sources" id="sources1" class="custom-select sources" placeholder="Shopstore">
+									<option value="profile">Profile</option>
+									<option value="word">Word</option>
+									<option value="hashtag">Hashtag</option>
+								</select>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header-box container-fluid">
+				<div class="row">
+					<div class="col-sm-9 tab-view">
+						<ul class="nav nav-pills">
+							<li class="active"><a data-toggle="pill" href="#home">Visualisation</a></li>
+							<li><a data-toggle="pill" href="#menu1">tableau</a></li>
+							<li><a data-toggle="pill" href="#menu2">Donnees de la page</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3">
+						<p class="mg-0 right mg-tp-15"><span class="icon-search pd-15"></span><span class="icon-upload pd-15"></span><span class="icon-indent-right select pd-15"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<nav class="nav1">
+				<ul>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="top-p">
+						<div id="home" class="tab-pane fade in active ">
+							<div class="d-table-d">
+								<div class="d-table-cell">
+									<h2>VerveWine Homepage</h1>
+									<table class="VanderTable">
+										<thead>
+											<tr>
+											<th>zones</th>
+											<th>Revenu</th>
+											<th>Revenu per clic</th>
+											<th>Achat - Taux..</th>
+											<th>Taux de survol</th>
+											<th>Taux d'enga..</th>
+											<th>Temps</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+											<tr>
+												<td>Header</td>
+												<td>23%</td>
+												<td>7678</td>
+												<td>77</td>
+												<td>7%</td>
+												<td>97%</td>
+												<td>3.33</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 right-p">
+					<div class="row">
+						<div class="right-tab">
+							<div class="col-sm-12 tab-box">
+								<p class="mg-0  font-16">Metriques a afficher <span class="right count">9</span></p>
+							</div>
+							<div class="col-sm-12 tab-box">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<a data-toggle="collapse" href="#collapse1">
+											<div class="width-100">
+												<p class="mg-0 font-16">ROI<span class="right icon-angle-circled-down"></span></p>
+											</div>
+										</a>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse pd-10">
+										<label class="container-f">Revenu
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="container-f">Revenu par clic
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="container-f">Achat taux de conversion par clic
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="container-f">Achat taux de conversion par survol
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 tab-box">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<a data-toggle="collapse" href="#collapse2">
+											<div class="width-100">
+												<p class="mg-0 font-16">Performances<span class="right icon-angle-circled-down"></span></p>
+											</div>
+										</a>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse pd-10">
+										<label class="container-f">CS - Atteinte HomePage - Taux de...
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<div class="center mx-auto">
+											<select name="sources" id="sources1" class="custom-select sources" placeholder="Source Type">
+												<option value="profile">Profile</option>
+												<option value="word">Word</option>
+												<option value="hashtag">Hashtag</option>
+											</select>
+										</div>
+										<p class="pd-10 mg-0">Taux de conv. 
+											<span>
+												<label class="container-f container-f-d">One
+													<input type="radio" checked="checked" name="radio">
+													<span class="checkmark radio"></span>
+												</label>
+											</span>
+											<span>
+												<label class="container-f container-f-d">One
+													<input type="radio" checked="checked" name="radio">
+													<span class="checkmark radio"></span>
+												</label>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 tab-box">
+								<div class="panel-group">
+									<div class="panel panel-default">
+										<a data-toggle="collapse" href="#collapse3">
+											<div class="width-100">
+												<p class="mg-0 font-16">Attractivite<span class="right icon-angle-circled-down"></span></p>
+											</div>
+										</a>
+									</div>
+									<div id="collapse3" class="panel-collapse collapse pd-10">
+										<label class="container-f">Taux de clic
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="container-f">Repartitions des clics
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="bottom-btn">
+								<button class="button-n">Annuler</button>
+								<button class="button-b">VALIDER</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div></div>
+	<script src="public/js/jquery.min.js"></script>
+	<script src="public/js/jquery-ui.min.js"></script>
+	<script src="public/js/vandertable.js"></script>
+	<script src="public/js/index.js"></script>
+	<script src="public/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,509 @@
+body {
+	font-family: Arial, sans-serif;
+	color: #024457;
+	background: #f2f2f2;
+}
+h1 {
+	font-family: Verdana;
+	font-weight: normal;
+	color: #024457;
+}
+h1 span {
+	color: #167F92;
+	font-size: x-large;
+}
+
+.select {
+	background-color: #5d83f3;
+}
+
+.user {
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #abb2b2;
+}
+
+.pd-15 {
+	padding: 5px;
+}
+
+.media, .media-body{
+	overflow: inherit;
+}
+
+.amp-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.mg-tp-15 {
+	margin-top: 15px !important;
+}
+
+.mg-0 {
+	margin: 0;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.header-box {
+	position: relative;
+	min-height: 40px;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #f8f7f9;
+	padding-bottom: 5px;
+}
+
+.list li {
+	display: inline-block;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.right {
+	float: right;
+}
+
+.tab-box {
+	border-bottom: 1px solid #e9ebee;
+	padding: 10px;
+}
+
+.tab-box a:hover,
+.tab-box a:focus {
+	text-decoration: none;
+}
+
+.tab-box .panel {
+	box-shadow: inherit;
+	border: 0;
+}
+
+.fixed {
+	position: fixed;
+	z-index: 1111;
+}
+
+.d-table-d {
+	display: table;
+	height: 575px;
+	width: 100%;
+}
+
+.d-table {
+	display: table;
+	height: 40px;
+	width: 100%;
+}
+
+.d-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+}
+
+.top-p {
+	padding-top: 100px;
+}
+
+.right-p {
+	position: relative;
+}
+
+.right-tab {
+	background-color: #fff;
+	position: fixed;
+	top: 100px;
+	bottom: 0;
+	padding: 10px;
+	padding-bottom: 50px;
+	min-height: calc(100vh - 100px);
+}
+
+.icon-angle-circled-down {
+	font-size: 20px;
+	color: #9387fc;
+}
+
+.count {
+	width: 25px;
+	height: 25px;
+	background-color: #f4be5c;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 26px;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.8; 
+}
+
+.panel-group {
+	margin-bottom: 0;
+}
+
+.pd-10 {
+	padding: 10px;
+}
+
+.font-16 {
+	font-size: 16px;
+}
+
+.bottom-btn {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 10px;
+}
+
+.mx-auto .custom-select-trigger {
+	width: 250px;
+}
+
+.button-n,
+.button-b {
+	padding: 6px;
+	border-radius: 5px;
+	text-align: center;
+	margin-right: 3px;
+	margin-left: 3px;
+	min-width: 145px;
+}
+
+.button-n {
+	background-color: #fff;
+	color: #333;
+}
+
+.button-b {
+	background-color: #5d83f3;
+	color: #fff;
+}
+
+.container-f {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: inherit;
+}
+
+.tab-view .nav-pills {
+	border-bottom: 0;
+}
+
+.tab-view .nav-pills .active a,
+.tab-view .nav-pills .active a:focus,
+.tab-view .nav-pills .active a:hover,
+.tab-view .nav-pills a:focus,
+.tab-view .nav-pills a:hover {
+	border: 0;
+	background-color: #fff;
+	color: #858994;
+}
+
+.tab-view .nav-pills .active {
+	border-bottom: 2px solid #5d83f3;
+}
+
+.tab-view .nav-pills li {
+	border-bottom: 2px solid #fff;
+}
+
+
+/* Hide the browser's default checkbox */
+.container-f input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 22px;
+	border-radius: 5px;
+	width: 22px;
+	background-color: #eee;
+}
+
+.checkmark.radio {
+	border-radius: 10px;
+	margin: 0;
+}
+
+.container-f-d {
+	display: inherit;
+}
+
+/* On mouse-over, add a grey background color */
+.container-f:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-f input:checked ~ .checkmark {
+    background-color: #f4be5c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-f input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-f .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* nav toggle */
+.nav-toggle {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	left: 2rem;
+	position: absolute;
+	top: 33%;
+	width: 15px;
+	z-index: 2;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.nav-toggle:hover {
+	opacity: 0.8;
+}
+
+.nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::after,
+.nav-toggle .nav-toggle-bar::before {
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background: #5d83f3;
+	content: '';
+	height: 3px;
+	width: 100%;
+}
+.nav-toggle .nav-toggle-bar {
+	margin-top: 0;
+}
+
+.nav-toggle .nav-toggle-bar::after {
+	margin-top: 8px;
+}
+
+.nav-toggle .nav-toggle-bar::before {
+	margin-top: 3px;
+}
+
+.nav-toggle.expanded .nav-toggle-bar {
+	background: transparent;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+	background: white;
+	margin-top: 0;
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.nav1 {
+	-webkit-transition: left 0.5s ease;
+	-moz-transition: left 0.5s ease;
+	-ms-transition: left 0.5s ease;
+	-o-transition: left 0.5s ease;
+	transition: left 0.5s ease;
+	background: #949b9b;
+	color: white;
+	cursor: pointer;
+	font-size: 2rem;
+	height: 100vh;
+	left: -20rem;
+	padding: 6rem 2rem 2rem 2rem;
+	position: fixed;
+	top: 0;
+	width: 20rem;
+	z-index: 1;
+}
+.nav1.expanded {
+	left: 0;
+}
+
+.nav1 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/** Custom Select **/
+.custom-select-wrapper {
+	position: relative;
+	display: inline-block;
+	user-select: none;
+}
+.custom-select-wrapper select {
+	display: none;
+}
+
+.custom-select {
+	position: relative;
+	display: inline-block;
+}
+
+.custom-select-trigger {
+	position: relative;
+	display: block;
+	min-width: 135px;
+	padding: 5px 35px 5px 5px;
+	color: #3c3f47;
+	background: #f6f7fb;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.custom-select-trigger:after {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	top: 50%;
+	right: 12px;
+	margin-top: -3px;
+	border-bottom: 1px solid #a0a3ad;
+	border-right: 1px solid #a0a3ad;
+	transform: rotate(45deg) translateY(-50%);
+	transition: all .4s ease-in-out;
+	transform-origin: 50% 0;
+}
+
+.custom-select.opened .custom-select-trigger:after {
+	margin-top: 3px;
+	transform: rotate(-135deg) translateY(-50%);
+}
+
+.custom-options {
+	position: absolute;
+	display: block;
+	top: 100%;
+	left: 0;
+	right: 0;
+	min-width: 100%;
+	margin: 15px 0;
+	border: 1px solid #b5b5b5;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 1px rgba(0,0,0,.07);
+	background: #fff;
+	transition: all .4s ease-in-out;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transform: translateY(-15px);
+}
+
+.custom-select.opened .custom-options {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+	transform: translateY(0);
+}
+
+.custom-options:before {
+	position: absolute;
+	display: block;
+	content: '';
+	bottom: 100%; right: 25px;
+	width: 7px; height: 7px;
+	margin-bottom: -4px;
+	border-top: 1px solid #b5b5b5;
+	border-left: 1px solid #b5b5b5;
+	background: #fff;
+	transform: rotate(45deg);
+	transition: all .4s ease-in-out;
+}
+
+.option-hover:before {
+	background: #f9f9f9;
+}
+
+.custom-option {
+	position: relative;
+	display: block;
+	padding: 5px 10px;
+	border-bottom: 1px solid #b5b5b5;
+	font-size: 14px;
+	color: #535353;
+	cursor: pointer;
+	transition: all .4s ease-in-out;
+}
+
+.custom-option:first-of-type {
+	border-radius: 4px 4px 0 0;
+}
+
+.custom-option:last-of-type {
+	border-bottom: 0;
+	border-radius: 0 0 4px 4px;
+}
+
+.custom-option:hover,
+.custom-option.selection {
+	background: #f9f9f9;
+}
